@@ -12,7 +12,7 @@ def addressBalance(args):
   if len(inputs) == 0:
     balance += 0
   elif len(inputs) == 1:
-  balance += inputs[0].get("amount")
+    balance += inputs[0].get("amount")
   else:
     for i in (0, len(inputs)-1):
       balance += inputs[i].get("amount")

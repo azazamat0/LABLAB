@@ -46,8 +46,7 @@ def send_coins(message):
    fee = float(temp.get("amount")) - float(amount) - 0.001
    inputForTransaction = {"txid":temp.get("txid"), "vout": temp.get("vout")}
    try:
-      createTransaction =
-rpc_connection.createrawtransaction([inputForTransaction],{receiver_address:amount, sender_address:fee})
+      createTransaction = rpc_connection.createrawtransaction([inputForTransaction],{receiver_address:amount, sender_address:fee})
    except JSONRPCException:
       bot.reply_to(message, f"Invalid recipient wallet address")
       return

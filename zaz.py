@@ -76,6 +76,6 @@ def get_address_balance(message):
 @bot.message_handler(content_types=['text'])
 def send_message(message):
     bot.send_message(message.chat.id, message.text)
-
+_name_ == '_main_'
 if _name_ == '_main_':
     bot.infinity_polling()

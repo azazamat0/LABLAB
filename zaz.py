@@ -3,7 +3,7 @@ from bitcoinrpc.authproxy import AuthServiceProxy, JSONRPCException
 
 TOKEN = "7070202629:AAFQcYBicTkBmuzuhk7pyViV0LTkgR3E9RM"
 rpc_user = 'kzcashrpc'
-rpc_password = 'f4aQo96JINEqNyW1msoVUMt2'
+rpc_password = 'VxYnZE0pijltpc6PmIEjEzxk'
 rpc_connection = AuthServiceProxy(f'http://{rpc_user}:{rpc_password}@127.0.0.1:8276')
 
 bot_token = TOKEN

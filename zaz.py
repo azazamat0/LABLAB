@@ -29,7 +29,7 @@ def get_balance(message):
 def send_coins(message):
      args = message.text.split()[1:]
      if len(args) != 3:
-          bot.reply_to(message, "Template: " /send <sender address> <recipient address> <amount>")
+          bot.reply_to(message, "Template: /send <sender address> <recipient address> <amount>")
      return
          sender_address, receiver_address, amount = args
      try:
@@ -58,7 +58,7 @@ def send_coins(message):
 def get_address_balance(message):
       args = message.text.split()[1:]
       if len(args) != 1:
-           bot.reply_to(message, "Template:" /getaddressbalance <wallet address>)
+           bot.reply_to(message, "Template: /getaddressbalance <wallet address>")
       return 
       try:
          balance = addressBalance(args)
